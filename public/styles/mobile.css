@@ -111,27 +111,31 @@ a {
     
 }
 
-@media only screen and (min-width: 1200px){
+@media only screen and (min-width: 1000px){
     .wrapper {
         margin: 0 auto;
+        width: 100%;
     }
-    .info {
-        float: right;
+    .info1 {
+        display: inline-block;
+        vertical-align: top;
+        width: 49%;
     }
     .page-img{
         float: left;
+        width: 49%;
+
     }
-    .info h2{
-        float: right;
+    .info {
+        float: left;
+        max-width: 100%;
     }
-    .info p{
-        float: right;
-    }
-    .info divider{
-        float: right;
-    }
-    .info mainMenu{
-        float: right;
-    }    
     
+    .gallery-img{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(8);
+        grid-gap: 15px;
+    }
+
 }

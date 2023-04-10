@@ -4,8 +4,8 @@ import { Image } from "@astrojs/image/components";
 ---
 <DefaultLayout title="Schauspielerin &ndash; Lucca Rabenstein">
 <div class="wrapper">
-    <Image src="/assets/main.jpg" class="page-img" sizes="((min-width: 269px) and (max-width: 667px))" width={362} height={543} aspectRatio="1:1" alt="Lucca Rabenstein" />    
-    <article class="info">
+    <Image src="/assets/main.jpg" sizes="((min-width: 269px) and (max-width: 667px))" class="page-img" width={269} height={444} aspectRatio="1:1" alt="Lucca Rabenstein" />
+    <article class="info1">
      <h2><a id="home">Lucca Rabenstein</a></h2>
         <p>Neue M&#252;nchner Schauspielschule</p>
         <hr class="divider">
@@ -44,16 +44,18 @@ import { Image } from "@astrojs/image/components";
     <h2><a id="gallery">Galerie</a></h2> 
     <hr class="divider">
     <br />
-    <a href="assets/index-5_1.jpg"><Image src="/assets/index-5_1.jpg" class="gallery-img" sizes="((min-width: 269px) and (max-width: 543px))" width={362} height={543} aspectRatio="1:1" alt="Lucca Rabenstein" /></a>
-    <a href="assets/index-5_2.jpg"><Image src="/assets/index-5_2.jpg" class="gallery-img"  sizes="((min-width: 269px) and (max-width: 543px))" width={362} height={543} aspectRatio="1:1" alt="Lucca Rabenstein" /></a>
-    <a href="assets/index-5_3.jpg"><Image src="/assets/index-5_3.jpg" class="gallery-img"  sizes="((min-width: 269px) and (max-width: 543px))" width={362} height={543} aspectRatio="1:1" alt="Lucca Rabenstein" /></a>
-    <a href="assets/index-6_1.jpg"><Image src="/assets/index-6_1.jpg" class="gallery-img" sizes="((min-width: 269px) and (max-width:268px))" width={362} height={543} aspectRatio="1:1" alt="Lucca Rabenstein" /></a>
-    <a href="assets/index-6_2.jpg"><Image src="/assets/index-6_2.jpg" class="gallery-img"  sizes="((min-width: 269px) and (max-width:268px))" width={362} height={543} aspectRatio="1:1" alt="Lucca Rabenstein" /></a>
-    <a href="assets/index-6_3.jpg"><Image src="/assets/index-6_3.jpg" class="gallery-img" sizes="((min-width: 269px) and (max-width:268px))" width={362} height={543} aspectRatio="1:1" alt="Lucca Rabenstein" /></a>
-    <a href="assets/index-6_4.jpg"><Image src="/assets/index-6_4.jpg" class="gallery-img" sizes="((min-width: 269px) and (max-width:268px))" width={362} height={543} aspectRatio="1:1" alt="Lucca Rabenstein" /></a>
-    <a href="assets/index-7_1.jpg"><Image src="/assets/index-7_1.jpg" class="gallery-img" sizes="((min-width: 269px) and (max-width: 543px))" width={362} height={543} aspectRatio="1:1" alt="Lucca Rabenstein" /></a>
-    <a href="assets/index-7_2.jpg"><Image src="/assets/index-7_2.jpg" class="gallery-img"  sizes="((min-width: 269px) and (max-width: 543px))" width={362} height={543} aspectRatio="1:1" alt="Lucca Rabenstein" /></a>
-    <a href="assets/index-7_3.jpg"><Image src="/assets/index-7_3.jpg" class="gallery-img"  sizes="((min-width: 269px) and (max-width: 543px))" width={362} height={543} aspectRatio="1:1" alt="Lucca Rabenstein" /></a>
+    <div class="gallery-img">
+        <a href="assets/index-5_1.jpg"><Image src="/assets/index-5_1.jpg" sizes="((min-width: 269px) and (max-width: 543px))" width={362} height={543} aspectRatio="1:1" alt="Lucca Rabenstein" /></a>
+        <a href="assets/index-5_2.jpg"><Image src="/assets/index-5_2.jpg" sizes="((min-width: 269px) and (max-width: 543px))" width={362} height={543} aspectRatio="1:1" alt="Lucca Rabenstein" /></a>
+        <a href="assets/index-5_3.jpg"><Image src="/assets/index-5_3.jpg" sizes="((min-width: 269px) and (max-width: 543px))" width={362} height={543} aspectRatio="1:1" alt="Lucca Rabenstein" /></a>
+        <a href="assets/index-6_1.jpg"><Image src="/assets/index-6_1.jpg" sizes="((min-width: 269px) and (max-width:268px))" width={362} height={543} aspectRatio="1:1" alt="Lucca Rabenstein" /></a>
+        <a href="assets/index-6_2.jpg"><Image src="/assets/index-6_2.jpg" sizes="((min-width: 269px) and (max-width:268px))" width={362} height={543} aspectRatio="1:1" alt="Lucca Rabenstein" /></a>
+        <a href="assets/index-6_3.jpg"><Image src="/assets/index-6_3.jpg" sizes="((min-width: 269px) and (max-width:268px))" width={362} height={543} aspectRatio="1:1" alt="Lucca Rabenstein" /></a>
+        <a href="assets/index-6_4.jpg"><Image src="/assets/index-6_4.jpg" sizes="((min-width: 269px) and (max-width:268px))" width={362} height={543} aspectRatio="1:1" alt="Lucca Rabenstein" /></a>
+        <a href="assets/index-7_1.jpg"><Image src="/assets/index-7_1.jpg" sizes="((min-width: 269px) and (max-width: 543px))" width={362} height={543} aspectRatio="1:1" alt="Lucca Rabenstein" /></a>
+        <a href="assets/index-7_2.jpg"><Image src="/assets/index-7_2.jpg" sizes="((min-width: 269px) and (max-width: 543px))" width={362} height={543} aspectRatio="1:1" alt="Lucca Rabenstein" /></a>
+        <a href="assets/index-7_3.jpg"><Image src="/assets/index-7_3.jpg" sizes="((min-width: 269px) and (max-width: 543px))" width={362} height={543} aspectRatio="1:1" alt="Lucca Rabenstein" /></a>
+    </div>
 </article>
 </div>
 <div class="wrapper">  
@@ -62,16 +64,16 @@ import { Image } from "@astrojs/image/components";
         <hr class="divider">
         <br/> 
         <Image src="/assets/sr.jpg" class="page-img" sizes="((min-width: 296px) and (max-width: 667px))" width={362} height={377} aspectRatio="1:1" alt="Lucca Rabenstein" /> 
-        <p><b>Gr&ouml;ße:</b> 156 cm</p>
-        <p><b>Statur:</b> schlank</p> 
-        <p><b>Ethnisches Aussehen:</b> keltisch, mitteleurop&ouml;isch</p>
-        <p><b>Spielalter:19 &ndash; 29 Jahre</b></p> 
-        <p><b>Staatsangeh&ouml;rigkeit:</b> deutsch</p>  
-        <p><b>Wohnm&ouml;glichkeiten:</b> M&uuml;nchen, Augsburg, Berlin, Hamburg</p> 
-        <p><b>F&uuml;hrerschein:</b> B</p>
-        <p><b>Stimmlage:</b> Mezzosopran</p>
-        <p><b>Besondere F&auml;higkeiten:</b> Ballett</p>  
-        <p><b>Sprachen:</b> Deutsch (Muttersprache), Englisch (gut), Franz&ouml;sisch (Grundkenntnisse), Russisch (Grundkenntnisse)</p> 
+        <p>&nbsp;<b>Gr&ouml;ße:</b> 156 cm</p>
+        <p>&nbsp;<b>Statur:</b> schlank</p>
+        <p>&nbsp;<b>Ethnisches Aussehen:</b> keltisch, mitteleurop&ouml;isch</p>
+        <p>&nbsp;<b>Spielalter:19 &ndash; 29 Jahre</b></p> 
+        <p>&nbsp;<b>Staatsangeh&ouml;rigkeit:</b> deutsch</p>  
+        <p>&nbsp;<b>Wohnm&ouml;glichkeiten:</b> M&uuml;nchen, Augsburg, Berlin, Hamburg</p> 
+        <p>&nbsp;<b>F&uuml;hrerschein:</b> B</p>
+        <p>&nbsp;<b>Stimmlage:</b> Mezzosopran</p>
+        <p>&nbsp;<b>Besondere F&auml;higkeiten:</b> Ballett</p>  
+        <p>&nbsp;<b>Sprachen:</b> Deutsch (Muttersprache), Englisch (gut), Franz&ouml;sisch (Grundkenntnisse), Russisch (Grundkenntnisse)</p> 
         <br />
     </article>
 </div>
